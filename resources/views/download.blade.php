@@ -11,10 +11,10 @@
         <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" style="width:100px;" alt="logo mio sito">
         <nav style="display:flex;">
             <ul style="list-style-type:none; display:inline;">
-                <li style="display:inline;"><a href="/">HOME</a></li>
-                <li style="display:inline;"><a href="/about">ABOUT US</a></li>
-                <li style="display:inline;"><a href="/contactUs">CONTACT US</a></li>
-                <li style="display:inline;"><a href="/download">DOWNLOAD</a></li>
+                <li style="display:inline;"><a href="{{route('home')}}">HOME</a></li>
+                <li style="display:inline;"><a href="{{route('about')}}">ABOUT US</a></li>
+                <li style="display:inline;"><a href="{{route('contact')}}">CONTACT US</a></li>
+                <li style="display:inline;"><a href="{{route('download')}}">DOWNLOAD</a></li>
             </ul>
         </nav>
     </header>
