@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page del mio sito</title>
+    <title>About Us page del mio sito</title>
 </head>
 <body>
     <header style="display:flex; justify-content:space-between">
         <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" style="width:100px;" alt="logo mio sito">
         <nav style="display:flex;">
-            <ul style="list-style-type:none; display:inline;">
+            <ul style="list-style-type:none;">
                 <li style="display:inline;"><a href="/">HOME</a></li>
                 <li style="display:inline;"><a href="/about">ABOUT US</a></li>
                 <li style="display:inline;"><a href="/contactUs">CONTACT US</a></li>
@@ -20,7 +20,12 @@
     </header>
     <main>
         <h1>{{$message}}</h1>
+        
+        <ul style="list-style-type:none; display:flex;">
+            @foreach($aboutList as $aboutItem)
+                <li style="padding:15px;">{{$aboutItem}}</li>
+            @endforeach
+        </ul>
     </main>
-
 </body>
 </html>
